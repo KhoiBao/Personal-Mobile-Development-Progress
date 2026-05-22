@@ -69,7 +69,7 @@ class _MapScreenState extends State<MapScreen> {
   Future<void> _getDirections() async {
     if (_currentPosition == null) return;
     String apiKey =
-        "AIzaSyAdST0k5BTg3dQbKygUulN-A_wqA7YoiD8"; // Thay bằng API Key
+        ""; // Thay bằng API Key
     String url =
         "https://maps.googleapis.com/maps/api/directions/json?origin=${_currentPosition!.latitude},${_currentPosition!.longitude}&destination=${_destination
         .latitude},${_destination.longitude}&key=$apiKey";
